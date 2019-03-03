@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Assign04
 {
+    /// <summary>
+    /// CustomerPrinter class to print list of provinces for the user input
+    /// To print the list of customers (param -> List<Customer> customers)
+    /// </summary>
     class CustomerPrinter
     {
         static readonly string divider = new string('-', 75);
