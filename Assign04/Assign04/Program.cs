@@ -11,6 +11,7 @@ namespace Assign04
         static void Main(string[] args)
         {
             List<string> provinces = CustomerRepository.GetDistinctProvinces();
+            Console.Title = "COMP2614 - Assignment 4 - A01062206";
 
             CustomerPrinter.PrintProvinces(provinces);
 
@@ -23,8 +24,11 @@ namespace Assign04
             }
 
             string selectedProvince = provinces[--filter];
+            Console.WriteLine("Customer listing for " + selectedProvince);
+            
+            List<Customer> customers = CustomerRepository.GetCustomersByProvince(selectedProvince);
+            CustomerPrinter.PrintCustomer(customers);
 
-            Console.WriteLine(selectedProvince);
         }
     }
 }
