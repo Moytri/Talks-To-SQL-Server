@@ -13,6 +13,18 @@ namespace Assign04
             List<string> provinces = CustomerRepository.GetDistinctProvinces();
 
             CustomerPrinter.PrintProvinces(provinces);
+
+            string provinceInput = Console.ReadLine();
+            bool sucess = int.TryParse(provinceInput, out int filter);
+
+            if(!sucess)
+            {
+                return;
+            }
+
+            string selectedProvince = provinces[--filter];
+
+            Console.WriteLine(selectedProvince);
         }
     }
 }
