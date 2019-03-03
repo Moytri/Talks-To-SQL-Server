@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Assign04
 {
+    /// <summary>
+    /// Repository class to handle database operations;
+    /// </summary>
     class CustomerRepository
     {
         private static string connString = @"Server=tcp:skeena.database.windows.net,1433; 

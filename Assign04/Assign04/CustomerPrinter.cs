@@ -8,7 +8,7 @@ namespace Assign04
 {
     class CustomerPrinter
     {
-        static readonly string divider = new string('-', 80);
+        static readonly string divider = new string('-', 75);
 
         public static void PrintProvinces(List<string> provinces)
         {
