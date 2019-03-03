@@ -11,8 +11,7 @@ namespace Assign04
         static void Main(string[] args)
         {
             List<string> provinces = CustomerRepository.GetDistinctProvinces();
-
-            ConsolePrinter.PrintProvinces(provinces);
+            CustomerPrinter.PrintProvinces(provinces);
         }
     }
 }
