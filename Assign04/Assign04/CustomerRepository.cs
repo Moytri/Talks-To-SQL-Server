@@ -72,13 +72,17 @@ namespace Assign04
                 if(provinceName == "ALL")
                 {
                     query = @"SELECT CompanyName, City, Province,
-                                PostalCode, CreditHold From Customer";
+                                PostalCode, CreditHold 
+                                FROM Customer
+                                ORDER BY CompanyName";
                 }
                 else
                 {
                     query = @"SELECT CompanyName, City, Province,
-                            PostalCode, CreditHold From Customer
-                            WHERE Province = @province ";
+                            PostalCode, CreditHold 
+                            FROM Customer
+                            WHERE Province = @province 
+                            ORDER BY CompanyName";
                 }
 
                 using(SqlCommand cmd = new SqlCommand())

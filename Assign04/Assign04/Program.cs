@@ -18,13 +18,13 @@ namespace Assign04
             string provinceInput = Console.ReadLine();
             bool sucess = int.TryParse(provinceInput, out int filter);
 
-            //for province name as user input instead of item number (e.g: 1,2)
+            //return from the method for provinceName (e.g: BC) as user input instead of item number (e.g: 2)
             if(!sucess)
             {
                 return;
             }
 
-            //get selected province name against given input
+            //get selected province name for the given input
             string selectedProvince = provinces[--filter];
             Console.WriteLine("Customer listing for " + selectedProvince);
             
