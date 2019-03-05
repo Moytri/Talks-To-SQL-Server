@@ -72,9 +72,9 @@ namespace Assign04
                 if(provinceName == "ALL")
                 {
                     query = @"SELECT CompanyName, City, Province,
-                                PostalCode, CreditHold 
-                                FROM Customer
-                                ORDER BY CompanyName";
+                            PostalCode, CreditHold 
+                            FROM Customer
+                            ORDER BY CompanyName";
                 }
                 else
                 {
